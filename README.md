@@ -32,9 +32,22 @@
 
 </details>
 
+
+The reference used for the syntax can be found
+[here](https://altarica.labri.fr/wp/?page_id=333).
+
 ## (Neo)Vim
 
-> TODO
+To enable the syntax highlighting:
+
+1. Copy or link `./vim/altarica.vim` into `$VIMCONFIG/syntax`.
+2. Enable file type detection by adding to `$VIMCONFIG/filetype.vim`:
+
+```vim
+augroup filetypedetect
+  au! BufRead, BufNewFile *.alt setfiletype altarica
+augroup END
+```
 
 ## Visual Studio Code
 

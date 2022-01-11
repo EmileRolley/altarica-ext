@@ -32,9 +32,11 @@
 
 </details>
 
+<br>
 
 The reference used for the syntax can be found
 [here](https://altarica.labri.fr/wp/?page_id=333).
+
 
 ## (Neo)Vim
 
@@ -56,5 +58,4 @@ To install the extension, run:
 ```console
 > ./setup_vscode
 ```
-
-> Very basic syntax highlighting.
+> File extension to use: `.alt`

@@ -1,0 +1,108 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "AltaRica",
+	"patterns": [
+		{
+			"include": "#inline-comments"
+		},
+		{
+			"include": "#mult-comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#identifier"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#defines"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+					"name": "keyword.control.altarica",
+					"match": "\\b(case|if|then|else|assert|node|edon|flow|state|init|event|trans|sync|sub|domain|const|extern|param|param_set|sig|struct|tcurts)\\b"
+				}]
+		},
+		"operators": {
+			"patterns": [{
+					"name": "keyword.operator.altarica",
+					"match": "\\+|-|\\*|/|~|>|<|=|&|\\||\\?"
+				},
+				{
+					"name": "keyword.operator.altarica",
+					"match": "\\b(not|mod|max|min|and|or|imply)\\b"
+				},
+				{
+					"name": "keyword.operator.assignment",
+					"match": ":="
+				}]
+		},
+		"strings": {
+			"name": "string.quoted.double.altarica",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.altarica",
+					"match": "\\\\."
+				}
+			]
+		},
+		"inline-comments": {
+			"name": "comment.line.number-sign.altarica",
+			"match": "//.*$"
+		},
+		"mult-comments": {
+			"name": "comment.block.altarica",
+			"begin": "/\\*",
+			"end": "\\*/"
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"match": "[0-9]+"
+			}]
+		},
+		"identifiers": {
+			"patterns": [{
+				"name": "support.class",
+				"match": "[a-zA-Z_][a-zA-Z_0-9'^]*"
+			}]
+		},
+		"types": {
+			"patterns": [{
+				"name": "entity.type",
+				"match": "bool|integer"
+			}]
+		},
+		"constants": {
+			"patterns": [
+				{"name": "constant.language",
+				"match": "true|false"}
+			]
+		},
+		"defines": {
+			"name": "support.constant",
+			"begin": "^#define",
+			"end": "$"
+		}
+	},
+	"scopeName": "source.altarica"
+}

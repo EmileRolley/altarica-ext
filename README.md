@@ -51,4 +51,10 @@ augroup END
 
 ## Visual Studio Code
 
-> TODO
+To install the extension, run:
+
+```console
+> ./setup_vscode
+```
+
+> Very basic syntax highlighting.

@@ -53,9 +53,5 @@ augroup END
 
 ## Visual Studio Code
 
-To install the extension, run:
-
-```console
-> ./setup_vscode
-```
-> File extension to use: `.alt`
+For a VS Code extension see: [AltaRica-Lang](https://marketplace.visualstudio.com/items?itemName=charles66820.altarica-lang)
+in the marketplace.

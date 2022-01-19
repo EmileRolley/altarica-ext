@@ -7,7 +7,7 @@ syn match Conditional "\(?\|\:\)"
 syn match Ignore "\((\|)\|{\|}\|,\|\;\|\.\|\[\|\]\|\:\)"
 syn match Operator "\(+\|\-\|*\|/\|\~\|not\|mod\|max\|min\|>\|<\|=\|\:=\|&\|and\|?\||\|or\|imply\)"
 
-syn keyword Type bool integer
+syn keyword Type bool integer public
 
 syn match String "\(\"\|\'\).*\(\"\|\'\)"
 syn keyword Boolean true false

@@ -1,4 +1,4 @@
-syn keyword Statement node edon flow state init event trans sync sub domain const extern param param_set sig struct tcurts
+syn keyword Statement node edon flow state init event trans sync sub domain const extern param param_set sig struct tcurts with do done
 syn keyword Conditional if then else
 syn keyword Label case
 syn keyword Exception assert
